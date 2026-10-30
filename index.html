@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+	<link rel="icon" href="https://cdn.luogu.com.cn/upload/image_hosting/1uuybito.png" type="image/png" sizes="32*32">
+    <meta charset="UTF-8">
+    <title>留言板</title>
+	<link rel="stylesheet" href="https://www.retiehe.com/css/template.css">
+</head>
+<body>
+	<div class="bg-img"></div>
+	<header>xiaoziyi11的网站</header>
+	<div class="container">
+        <a href="/">← 返回首页</a>
+    </div>
+	<img src="https://s2.loli.net/2024/04/10/rGsDT4d6ISFgv8K.png">
+<img src="https://imgs.qiubiaoqing.com/qiubiaoqing/user_pre_up_imgs/6848006de3855QZ9.gif">
+<img src="https://imgs.qiubiaoqing.com/qiubiaoqing/imgs/69a9dd20686ecu3M.gif?imageView2/2/w/200">
+<img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.UClDqYF0wKlS5sb-TqGoDgAAAA?w=132&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+<img src="https://imgs.qiubiaoqing.com/qiubiaoqing/imgs/67d04230d0164yFC.gif?imageView2/2/w/200">
+<img src="https://imgs.qiubiaoqing.com/qiubiaoqing/imgs/68091c9678cc7wU1.jpg">
+<img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.asgsg0amYZrGVTxhCfPCEwHaGF?w=191&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+<img src="https://tiebapic.baidu.com/forum/pic/item/03673ddca144ad34420263a596a20cf431ad851d.jpg?tbpicau=2026-11-10-05_a5f475fd9ccd68b11942269074a01311">
+<img src="https://ts2.tc.mm.bing.net/th/id/OIP-C.cPfmRzpNpQ1r7tdyiYZHjAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+<img src="https://channelnj.photo.store.qq.com/psc?/channel/NaDwC23LjvXqrn3RH.9z8WGjE4bUjNApCssrrSJr61WYc2poIKjs7dH4L6f7b8KvdCUEm51fdLn*XvfwD7HcyxqOlQuLX2BeAzy0ubo5J.g!/b=&bo=8ADgAPAA4AAWADA!&ek=1&tl=1">
+<img src="https://tiebapic.baidu.com/forum/pic/item/bc9909cd7cd98d102969e813673fb80e7bec901d.jpg?tbpicau=2026-11-10-05_027a2d46c3d72623e5597c80dffc0a06">
+
+	<p></p>
+	<script>
+		// 自动传递 islogin=true 到所有子页面链接
+function appendLoginParamToAllLink() {
+    const urlParams = new URLSearchParams(location.search);
+    const isLogin = urlParams.get("islogin") === "true";
+    if (!isLogin) return;
+
+    // 获取页面全部a标签
+    const allA = document.querySelectorAll("a");
+    allA.forEach(a => {
+        const originHref = a.getAttribute("href");
+        // 排除外部网址（luogu、xiaoziyi等外链不追加参数）
+        if (originHref.startsWith("http")) return;
+        if (!originHref) return;
+
+        // 拆分原有链接和已有参数
+        const hasParam = originHref.includes("?");
+        if (hasParam) {
+            a.href = originHref + "&islogin=true";
+        } else {
+            a.href = originHref + "?islogin=true";
+        }
+    })
+}
+// 页面加载执行
+appendLoginParamToAllLink();
+</script>
+
+</body></html>
